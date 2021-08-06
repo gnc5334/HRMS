@@ -15,6 +15,10 @@ public class HrmsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HrmsApplication.class, args);
+		
+		 //SpringApplication app = new SpringApplication(HrmsApplication.class);
+	      //  app.setDefaultProperties(Collections.singletonMap("server.port", "8181"));
+	       // app.run(args);
 	}
 	
 	
@@ -22,7 +26,7 @@ public class HrmsApplication {
 	    public Docket api() { 
 	        return new Docket(DocumentationType.SWAGGER_2)  
 	          .select()                                  
-	          .apis(RequestHandlerSelectors.basePackage("kodlamio.northwind"))                                       
+	          .apis(RequestHandlerSelectors.basePackage("kodlamaio.hrms"))                                       
 	          .build();                                           
 	    }
 
